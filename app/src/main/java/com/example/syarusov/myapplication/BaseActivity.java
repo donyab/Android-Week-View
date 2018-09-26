@@ -1,4 +1,4 @@
-package com.alamkanak.weekview.sample;
+package com.example.syarusov.myapplication;
 
 import android.graphics.RectF;
 import android.os.Bundle;

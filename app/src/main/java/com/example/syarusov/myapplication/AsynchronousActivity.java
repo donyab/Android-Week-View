@@ -1,10 +1,10 @@
-package com.alamkanak.weekview.sample;
+package com.example.syarusov.myapplication;
 
 import android.widget.Toast;
 
 import com.alamkanak.weekview.WeekViewEvent;
-import com.alamkanak.weekview.sample.apiclient.Event;
-import com.alamkanak.weekview.sample.apiclient.MyJsonService;
+import com.example.syarusov.myapplication.apiclient.Event;
+import com.example.syarusov.myapplication.apiclient.MyJsonService;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -32,7 +32,8 @@ public class AsynchronousActivity extends BaseActivity implements Callback<List<
         // downloaded using retrofit, visit http://square.github.io/retrofit
         if (!calledNetwork) {
             RestAdapter retrofit = new RestAdapter.Builder()
-                    .setEndpoint("https://api.myjson.com/bins")
+                    //.setEndpoint("https://api.myjson.com/bins")
+                    .setEndpoint("http://172.20.10.192:8080/reminders")
                     .build();
             MyJsonService service = retrofit.create(MyJsonService.class);
             service.listEvents(this);

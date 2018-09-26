@@ -1,4 +1,4 @@
-package com.alamkanak.weekview.sample.apiclient;
+package com.example.syarusov.myapplication.apiclient;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
